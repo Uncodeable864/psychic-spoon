@@ -1,0 +1,10 @@
+{
+  "item.psychicspoon.mysterious_orb": "Mysterious Orb",
+  "item.psychicspoon.discovered_orb": "Discovered Orb",
+  "itemGroup.psychicspoon.items": "PsychicSpoon: Items",
+  "message.psychicspoon.orb_discovered": "You have discovered an orb with the ability of %s!",
+  "action.psychicspoon.off": "You are no longer %s.",
+  "action.psychicspoon.on": "You are now %s.",
+  "action.psychicspoon.off_effect": "You no longer have %s.",
+  "action.psychicspoon.on_effect": "You now have %s."
+}
