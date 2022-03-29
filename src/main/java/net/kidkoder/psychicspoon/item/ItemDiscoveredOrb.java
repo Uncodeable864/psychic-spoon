@@ -55,6 +55,14 @@ public class ItemDiscoveredOrb extends Item {
                     user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 999999, 4));
                     user.sendMessage(new TranslatableText("action.psychicspoon.on_effect", "speed"), true);
                 }
+            } else if (ability.equals("Strength")) {
+                if (user.hasStatusEffect(StatusEffects.STRENGTH)) {
+                    user.removeStatusEffect(StatusEffects.STRENGTH);
+                    user.sendMessage(new TranslatableText("action.psychicspoon.off_effect", "strength"), true);
+                } else {
+                    user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 999999, 4));
+                    user.sendMessage(new TranslatableText("action.psychicspoon.on_effect", "strength"), true);
+                }
             }
         }
         //   user.setVelocity(user.getVelocity().add(0, 10, 0));

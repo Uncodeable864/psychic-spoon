@@ -26,7 +26,7 @@ public class ItemMysteriousOrb extends Item {
             user.getInventory().removeOne(user.getStackInHand(hand));
             ItemStack stack = new ItemStack(ItemRegister.DISCOVERED_ORB, 1);
             // Randomly choose an ability
-            String[] abilities = new String[]{"Invulnerable", "Invisibility", "Speed"};
+            String[] abilities = new String[]{"Invulnerable", "Invisibility", "Speed", "Strength"};
             // Pick a random element from the list
             int random = (int) (Math.random() * abilities.length);
             stack.getOrCreateNbt().putString("ability", abilities[random]);
